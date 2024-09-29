@@ -8,10 +8,10 @@ import random
 
 class Jeu:
     """
-    Classe représentant un jeu de devinette.
+    Classe représentante du jeu .
 
-    Attributes:
-        m (int): Le nombre maximum pour la devinette.
+    Attributs:
+        m (int): Le nombre m reçois en paramètre.
         k (int): Un nombre aléatoire entre 0 et m.
 
     Examples:
@@ -24,7 +24,7 @@ class Jeu:
         """
         Constructeur de la classe Jeu.
 
-        Args:
+        Arguments:
             m (int): Le nombre maximum pour le tirage aléatoire.
 
         Examples:
@@ -37,10 +37,10 @@ class Jeu:
 
     def test(self, k):
         """
-        Compare le nombre k avec le nombre à deviner.
+        Comparer le nombre k avec le nombre à deviner.
 
-        Args:
-            k (int): Le nombre proposé par le joueur.
+        Arguments:
+            k (int): Le nombre donné par le joueur.
 
         Returns:
             bool: True si k est égal à k, False sinon.
@@ -49,6 +49,7 @@ class Jeu:
             >>> j = Jeu(10)
             >>> j.test(j.k)  # On doit gagner si on propose le bon nombre
             'Bravo, tu as gagné !'
+            True
         """
         if k < self.k:
             print("Trop petit !")
